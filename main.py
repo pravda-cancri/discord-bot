@@ -4,9 +4,6 @@ from discord.ext import commands
 import discord
 import random
 
-
-
-
 hex_vals="123456789ABCDEF"
 def randhex():
     hex=''.join(random.choice(list(hex_vals)) for _ in range(int(6)))
@@ -58,16 +55,11 @@ async def picture(ctx,*arg1):
             else:
                 f.write(arg1[2]+"\n")
                 f.close()
-    except:pass
-        
-   
-    
-        
+    except:pass     
 extensions = [
 	'cogs.cg1',
     'cogs.music'
 ]
-
 if __name__ == '__main__': 
 	for extension in extensions:
 		bot.load_extension(extension) 

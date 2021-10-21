@@ -5,7 +5,7 @@ import discord
 import random
 import PIL
 
-my_secret = os.environ['maijn']
+
 
 
 hex_vals="123456789ABCDEF"

@@ -67,17 +67,16 @@ async def picture(ctx,*arg1):
 extensions = [
 	'cogs.cg1',
     'cogs.music'
-        # Same name as it would be if you were importing it
 ]
 
-if __name__ == '__main__':  # Ensures this is the file being ran
+if __name__ == '__main__': 
 	for extension in extensions:
-		bot.load_extension(extension)  # Loades every extension.
+		bot.load_extension(extension) 
 
-keep_alive()  # Starts a webserver to be pinged.
+keep_alive() 
 
 my_secret = os.environ['maijn']
-bot.run(my_secret)  # Starts the bot
+bot.run(my_secret)  
 
 
 

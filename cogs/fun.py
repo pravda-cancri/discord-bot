@@ -48,5 +48,3 @@ async def picture(ctx, *arg):
 
 def setup(bot):
 	bot.add_cog(Funcommands(bot))
-
-    

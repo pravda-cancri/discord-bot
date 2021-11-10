@@ -493,6 +493,4 @@ class Music(commands.Cog):
                 raise commands.CommandError('Bot is already in a voice channel.')
 
 def setup(bot):
-
-   
     bot.add_cog(Music(bot))
